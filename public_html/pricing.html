@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Gym</title>
+	<link rel="stylesheet" type="text/css" href="pricing.css">
+	
+	<script src="jquery-2.1.3.js"></script>
+
+	  <script>
+            $(document).ready(function(){
+             $("ol>li:nth-child(1)").css("color","#0059b3");
+             $("ol>li:nth-child(2)").css("color","#1aff8c");
+             $("ol>li:nth-child(3)").css("color","#ff1a8c");
+             $("ul>li:nth-child(1)").css("color","orange");
+             $("ul>li:nth-child(2)").css("color","orange");
+             $("ul>li:nth-child(3)").css("color","orange");
+
+            });
+
+
+             $(document).ready(function(){
+                $("p[class]").css("color","blue");
+                $("a[title='youtube']").css("color","red");
+            });
+        </script>
+
+</head>
+<body>
+
+    <script>
+         function myFunction() {
+        var x = document.getElementsByClassName('td1');
+       for(var i = 0; i < x.length; i++) {
+       x[i].style.color = 'red';
+       }
+
+       var x = document.getElementsByClassName('td2');
+       for(var i = 0; i < x.length; i++) {
+       x[i].style.color = '#1a53ff';
+       }
+
+       var x = document.getElementsByClassName('td3');
+       for(var i = 0; i < x.length; i++) {
+       x[i].style.color = ' #33ff33';
+       }
+
+  }
+         
+  
+        
+    
+    </script>
+    <header>
+      <a href="#" id="logo"></a>
+      <nav>
+      	  
+      	  <ul>
+      	  	  <li><a href="index.html">home</a></li>
+      	  	  <li><a href="#">Trainers</a></li>
+      	  	  <li><a href="#">Plans</a></li>
+      	  	  <li><a href="pricing.html" class="current">Pricing</a></li>
+      	  	  <li><a href="#">Facility</a></li>
+      	  	  <li><a href="contact.html">Contact</a></li>
+      	  </ul>
+      </nav>
+   </header>
+    
+    <p class="p1">We have three branches:</p>
+    <div id="radios">
+    <p><img src="images/gympic1.jpg" alt="webimage" 
+                height="300" width="500"/></p>
+        <label><input name="webradios"  
+                      type="radio" checked
+                      onchange="document.images[0].src='images/gympic1.jpg'"/>
+            Antelias</label>
+        <label><input name="webradios"  
+                      type="radio"
+                      onchange="document.images[0].src='images/gympic2.jpg'"/>
+            Jbeil</label> <label><input name="webradios"type="radio"
+                      onchange="document.images[0].src='images/gympic3.jpg'"/>
+            Jounieh</label>
+    </div>
+   
+    <table border="1" id="table">
+      <caption>Pricing</caption>
+      <tr>
+          <td class="td2">Lenght</td>
+          <td class="td2">One session</td>
+          <td class="td2">Three sessions/week</td>
+          <td class="td2">Four sessions/week</td>
+          
+      </tr>
+      <tr>
+          <td class="td3">One day</td>
+          <td>20$</td>
+          <td class="td1">XXX</td>
+          <td class="td1">XXX</td>
+          
+      </tr>
+      <tr>
+      	<td class="td3">One month</td>
+      	<td class="td1">XXX</td>
+      	<td>150$</td>
+      	<td>220$</td>
+      </tr>
+      <tr>
+      	<td class="td3">Two months</td>
+      	<td class="td1">XXX</td>
+      	<td>240$</td>
+      	<td>299$</td>
+      </tr>
+      <tr>
+      	<td class="td3">Three months</td>
+      	<td class="td1">XXX</td>
+      	<td>330$</td>
+      	<td>399$</td>
+      </tr>
+      
+    </table>
+    <input id="buttonn" type="button" value="press" onclick="myFunction()">
+
+
+    <p class="p2">Coaches</p>
+    <ul class="ul">
+    	<li>Zumba
+    		<ol>
+    		  <li>Dan john</li>
+    		  <li>Sean waxman</li>
+    		</ol>
+    	</li>
+    	<li>Yoga
+    		<ol>
+    		  <li>Andrea Delane</li>
+    		  <li>Eva Twardoken</li>
+    		</ol>
+    	</li>
+    	<li>Power Step
+    		<ol>
+    		  <li>John Aoklane</li>
+    		  <li>Andy Petranek</li>
+    		  <li>John Farr</li>
+    		</ol>
+    	</li>
+   </ul>
+   
+
+   <div class="div">
+           <p class="elias">Click <a href="https://www.youtube.com/" 
+                title="youtube">here</a> to view our latest events.
+           </p>
+   </div> 
+
+</body>
+</html>
